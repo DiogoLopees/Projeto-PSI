@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Título do Ecrã com a cor da marca SANA -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detalhes da Consulta"
+        android:textColor="#0052CC"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Card dos Detalhes da Sessão -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvTherapistName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terapeuta: Dr. Carlos Silva"
+                android:textColor="#1A2B4C"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvSessionDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data/Hora: 15/11/2026 às 14:30"
+                android:textColor="#707D93"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado: Agendada"
+                android:textColor="#2E7D32"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Botão Remarcar no azul SANA -->
+            <Button
+                android:id="@+id/btnReschedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remarcar Sessão"
+                android:backgroundTint="#0052CC"
+                android:textColor="#FFFFFF"
+                android:padding="14dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Botão Cancelar em vermelho -->
+            <Button
+                android:id="@+id/btnCancelSession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancelar Sessão"
+                android:backgroundTint="#D32F2F"
+                android:textColor="#FFFFFF"
+                android:padding="14dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

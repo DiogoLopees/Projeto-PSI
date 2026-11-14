@@ -38,13 +38,6 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        'view' => [
-            'theme' => [
-                'pathMap' => [
-                    '@app/views' => '@vendor/hail812/yii2-adminlte3/src/views'
-                ],
-            ],
-        ],
 
         /*
         'urlManager' => [
@@ -54,6 +47,23 @@ return [
             ],
         ],
         */
+    ],
+
+    // ADICIONADO AQUI: Proteção global do Back-Office
+    'as beforeRequest' => [
+        'class' => \yii\filters\AccessControl::class,
+        'rules' => [
+            [
+                // Permite ver a página de login e de erros sem estar autenticado
+                'actions' => ['login', 'error'],
+                'allow' => true,
+            ],
+            [
+                // Exige que o utilizador esteja autenticado para aceder ao resto do backend
+                'allow' => true,
+                'roles' => ['@'], // '@' significa utilizador autenticado
+            ],
+        ],
     ],
     'params' => $params,
 ];

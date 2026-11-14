@@ -35,6 +35,7 @@
             <?php
             echo \hail812\adminlte\widgets\Menu::widget([
                 'items' => [
+                       ['label' => 'Utilizadores', 'url' => ['user/index'], 'icon' => 'home'],
                     [
                         'label' => 'Starter Pages',
                         'icon' => 'tachometer-alt',

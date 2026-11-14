@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MessDetectorOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCSFixerOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCodeSnifferOptionsConfiguration">
+    <option name="highlightLevel" value="WARNING" />
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/composer" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/hail812/yii2-adminlte3" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/hail812/yii2-adminlte-widgets" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/cebe/markdown" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/twbs/bootstrap" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/phpspec/php-diff" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/phpstan/phpstan" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/polyfill-php85" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/yiisoft/yii2" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/yiisoft/yii2-coding-standards" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/yiisoft/yii2-bootstrap5" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/yiisoft/yii2-debug" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/yiisoft/yii2-composer" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/yiisoft/yii2-gii" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/yiisoft/yii2-bootstrap4" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/yiisoft/yii2-faker" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/yiisoft/yii2-symfonymailer" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/sebastian/git-state" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/sebastian/file-filter" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/bower-asset/inputmask" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/bower-asset/punycode" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/bower-asset/jquery" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/codeception/c3" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/bower-asset/yii2-pjax" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/codeception/lib-asserts" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/codeception/codeception" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/codeception/lib-web" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/codeception/lib-innerbrowser" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/codeception/module-filesystem" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/codeception/module-asserts" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/npm-asset/bootstrap" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/codeception/module-yii2" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/codeception/module-phpbrowser" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/codeception/verify" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/codeception/stub" />
+      <path value="$PROJECT_DIR$/ProjetoPSI/vendor/almasaeed2010/adminlte" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.2">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
+  <component name="PhpStan">
+    <PhpStan_settings>
+      <PhpStanConfiguration tool_path="$PROJECT_DIR$/ProjetoPSI/vendor/bin/phpstan" />
+    </PhpStan_settings>
+  </component>
+  <component name="PhpStanOptionsConfiguration">
+    <option name="memoryLimit" value="-1" />
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PsalmOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+</project>
