@@ -48,7 +48,7 @@ $this->params['meta_keywords'] = 'fisioterapia, terapia, reabilitação, massage
     <!-- Navbar & Hero Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-            <a href="index.html" class="navbar-brand p-0">
+            <a href="<?= Url::to(['/site/index']) ?>" class="navbar-brand p-0">
                 <h1 class="text-primary m-0"><i class="fas fa-star-of-life me-3"></i>Terapia</h1>
                 <!-- <img src="img/logo.png" alt="Logo"> -->
             </a>
@@ -57,21 +57,20 @@ $this->params['meta_keywords'] = 'fisioterapia, terapia, reabilitação, massage
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Início</a>
-                    <a href="about.html" class="nav-item nav-link">Sobre</a>
-                    <a href="service.html" class="nav-item nav-link">Serviços</a>
+                    <a href="<?= Url::to(['/site/index']) ?>" class="nav-item nav-link active">Início</a>
+                    <a href="<?= Url::to(['/site/about']) ?>" class="nav-item nav-link">Sobre</a>
+                    <a href="#" class="nav-item nav-link">Serviços</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
                         <div class="dropdown-menu m-0">
-                            <a href="appointment.html" class="dropdown-item">Marcações</a>
-                            <a href="feature.html" class="dropdown-item">Funcionalidades</a>
-                            <a href="blog.html" class="dropdown-item">O Nosso Blog</a>
-                            <a href="team.html" class="dropdown-item">A Nossa Equipa</a>
-                            <a href="testimonial.html" class="dropdown-item">Testemunhos</a>
-                            <a href="404.html" class="dropdown-item">Página 404</a>
+                            <a href="#" class="dropdown-item">Marcações</a>
+                            <a href="#" class="dropdown-item">Funcionalidades</a>
+                            <a href="#" class="dropdown-item">O Nosso Blog</a>
+                            <a href="#" class="dropdown-item">A Nossa Equipa</a>
+                            <a href="#" class="dropdown-item">Testemunhos</a>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contacte-nos</a>
+                    <a href="<?= Url::to(['/site/contact']) ?>" class="nav-item nav-link">Contacte-nos</a>
                 </div>
                 <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Marcar Consulta</a>
             </div>
@@ -820,15 +819,4 @@ $this->params['meta_keywords'] = 'fisioterapia, terapia, reabilitação, massage
     <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
 </div>
