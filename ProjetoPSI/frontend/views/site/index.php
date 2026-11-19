@@ -68,7 +68,6 @@ $this->params['meta_keywords'] = 'fisioterapia, terapia, reabilitação, massage
                             <a href="#" class="dropdown-item">O Nosso Blog</a>
                             <a href="#" class="dropdown-item">A Nossa Equipa</a>
                             <a href="#" class="dropdown-item">Testemunhos</a>
-                            <a href="#" class="dropdown-item">Página 404</a>
                         </div>
                     </div>
                     <a href="#" class="nav-item nav-link">Contacte-nos</a>
