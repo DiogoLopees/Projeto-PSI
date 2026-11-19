@@ -48,7 +48,7 @@ $this->params['meta_keywords'] = 'fisioterapia, terapia, reabilitação, massage
     <!-- Navbar & Hero Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-            <a href="<?= Url::to(['/site/index']) ?>" class="navbar-brand p-0">
+            <a href="#" class="navbar-brand p-0">
                 <h1 class="text-primary m-0"><i class="fas fa-star-of-life me-3"></i>Terapia</h1>
                 <!-- <img src="img/logo.png" alt="Logo"> -->
             </a>
@@ -57,8 +57,8 @@ $this->params['meta_keywords'] = 'fisioterapia, terapia, reabilitação, massage
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="<?= Url::to(['/site/index']) ?>" class="nav-item nav-link active">Início</a>
-                    <a href="<?= Url::to(['/site/about']) ?>" class="nav-item nav-link">Sobre</a>
+                    <a href="#" class="nav-item nav-link active">Início</a>
+                    <a href="#" class="nav-item nav-link">Sobre</a>
                     <a href="#" class="nav-item nav-link">Serviços</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
@@ -68,9 +68,10 @@ $this->params['meta_keywords'] = 'fisioterapia, terapia, reabilitação, massage
                             <a href="#" class="dropdown-item">O Nosso Blog</a>
                             <a href="#" class="dropdown-item">A Nossa Equipa</a>
                             <a href="#" class="dropdown-item">Testemunhos</a>
+                            <a href="#" class="dropdown-item">Página 404</a>
                         </div>
                     </div>
-                    <a href="<?= Url::to(['/site/contact']) ?>" class="nav-item nav-link">Contacte-nos</a>
+                    <a href="#" class="nav-item nav-link">Contacte-nos</a>
                 </div>
                 <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Marcar Consulta</a>
             </div>
