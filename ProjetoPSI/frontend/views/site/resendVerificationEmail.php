@@ -9,9 +9,9 @@ declare(strict_types=1);
 use yii\bootstrap5\ActiveForm;
 use yii\bootstrap5\Html;
 
-$this->title = 'Resend verification email';
+$this->title = 'Reenviar email de verificação';
 $this->params['breadcrumbs'][] = $this->title;
-$this->params['meta_description'] = 'Resend the verification email to confirm your account.';
+$this->params['meta_description'] = 'Reenvie o email de verificação para confirmar a sua conta.';
 $this->params['meta_keywords'] = 'yii, yii2, verification, email, resend, confirm account';
 $htmlIcon = <<<HTML
 {label}<div class="input-group"><span class="input-group-text" aria-hidden="true">%s</span>{input}</div>{error}{hint}
@@ -37,10 +37,10 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                     </div>
                     <div>
                         <h2 class="fw-bold mb-3 login-brand-title">
-                            Verify Your<br>Email
+                            Verifique o Seu<br>Email
                         </h2>
                         <p class="opacity-75 mb-0 login-brand-text">
-                            We will send a new verification email to confirm your account.
+                            Enviaremos um novo email de verificação para confirmar a sua conta.
                         </p>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                             ) ?>
                         </div>
                         <h1 class="h3 fw-bold mb-1"><?= Html::encode($this->title) ?></h1>
-                        <p class="text-body-secondary small">Enter your email to receive a new verification link</p>
+                        <p class="text-body-secondary small">Introduza o seu email para receber um novo link de verificação</p>
                     </div>
 
                     <?php $form = ActiveForm::begin(['id' => 'resend-verification-email-form']); ?>
@@ -75,12 +75,12 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                                 'class' => 'form-control',
                                 'placeholder' => 'email@example.com',
                             ],
-                        ])->textInput()->label('Your Email', $labelOptions) ?>
+                        ])->textInput()->label('O Seu Email', $labelOptions) ?>
                     </div>
 
                     <div class="d-grid">
                         <?= Html::submitButton(
-                            'Send',
+                            'Enviar',
                             [
                                 'class' => 'btn login-btn btn-lg rounded-3 text-white',
                             ],
@@ -90,7 +90,7 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                     <?php ActiveForm::end(); ?>
 
                     <div class="text-body-secondary text-center mt-3 small">
-                        Already verified? <?= Html::a('Login', ['site/login']) ?>
+                        Já verificou? <?= Html::a('Login', ['site/login']) ?>
                     </div>
 
                 </div>

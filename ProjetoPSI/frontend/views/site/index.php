@@ -7,16 +7,16 @@ declare(strict_types=1);
 use yii\helpers\Html;
 use yii\helpers\Url;
 
-$this->title = 'My Yii Application';
-$this->params['meta_description'] = 'A high-performance PHP framework best for developing web applications. Fast, secure, and professional.';
-$this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, high-performance';
+$this->title = 'Terapia';
+$this->params['meta_description'] = 'Centro de fisioterapia: tratamentos personalizados com terapeutas qualificados.';
+$this->params['meta_keywords'] = 'fisioterapia, terapia, reabilitação, massagem, saúde';
 ?>
 <div class="site-index">
 
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="sr-only">A carregar...</span>
         </div>
     </div>
     <!-- Spinner End -->
@@ -27,7 +27,7 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
         <div class="row gx-0 align-items-center" style="height: 45px;">
             <div class="col-lg-8 text-center text-lg-start mb-lg-0">
                 <div class="d-flex flex-wrap">
-                    <a href="#" class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                    <a href="#" class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Encontrar Localização</a>
                     <a href="#" class="text-light me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
                     <a href="#" class="text-light me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
                 </div>
@@ -57,23 +57,23 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <a href="index.html" class="nav-item nav-link active">Início</a>
+                    <a href="about.html" class="nav-item nav-link">Sobre</a>
+                    <a href="service.html" class="nav-item nav-link">Serviços</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
                         <div class="dropdown-menu m-0">
-                            <a href="appointment.html" class="dropdown-item">Appointment</a>
-                            <a href="feature.html" class="dropdown-item">Features</a>
-                            <a href="blog.html" class="dropdown-item">Our Blog</a>
-                            <a href="team.html" class="dropdown-item">Our Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
+                            <a href="appointment.html" class="dropdown-item">Marcações</a>
+                            <a href="feature.html" class="dropdown-item">Funcionalidades</a>
+                            <a href="blog.html" class="dropdown-item">O Nosso Blog</a>
+                            <a href="team.html" class="dropdown-item">A Nossa Equipa</a>
+                            <a href="testimonial.html" class="dropdown-item">Testemunhos</a>
+                            <a href="404.html" class="dropdown-item">Página 404</a>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    <a href="contact.html" class="nav-item nav-link">Contacte-nos</a>
                 </div>
-                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Book Appointment</a>
+                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Marcar Consulta</a>
             </div>
         </nav>
 
@@ -84,11 +84,11 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                 <img src="<?= Url::to('@web/template/img/carousel-1.jpg') ?>" class="img-fluid w-100" alt="Image">
                 <div class="carousel-caption">
                     <div class="carousel-caption-content p-3">
-                        <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Physiotherapy Center</h5>
-                        <h1 class="display-1 text-capitalize text-white mb-4">Best Solution For Painful Life</h1>
+                        <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Centro de Fisioterapia</h5>
+                        <h1 class="display-1 text-capitalize text-white mb-4">A Melhor Solução Para Uma Vida Sem Dor</h1>
                         <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         </p>
-                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Book Appointment</a>
+                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Marcar Consulta</a>
                     </div>
                 </div>
             </div>
@@ -96,11 +96,11 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                 <img src="<?= Url::to('@web/template/img/carousel-2.jpg')?>" class="img-fluid w-100" alt="Image">
                 <div class="carousel-caption">
                     <div class="carousel-caption-content p-3">
-                        <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Physiotherapy Center</h5>
-                        <h1 class="display-1 text-capitalize text-white mb-4">Best Solution For Painful Life</h1>
+                        <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Centro de Fisioterapia</h5>
+                        <h1 class="display-1 text-capitalize text-white mb-4">A Melhor Solução Para Uma Vida Sem Dor</h1>
                         <p class="mb-5 fs-5 animated slideInDown">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         </p>
-                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Book Appointment</a>
+                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Marcar Consulta</a>
                     </div>
                 </div>
             </div>
@@ -115,9 +115,9 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
         <div class="container py-5">
             <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
                 <div class="sub-style">
-                    <h4 class="sub-title px-3 mb-0">What We Do</h4>
+                    <h4 class="sub-title px-3 mb-0">O Que Fazemos</h4>
                 </div>
-                <h1 class="display-3 mb-4">Our Service Given Physio Therapy By Expert.</h1>
+                <h1 class="display-3 mb-4">Serviços de Fisioterapia Prestados Por Especialistas.</h1>
                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
             </div>
             <div class="row g-4 justify-content-center">
@@ -128,9 +128,9 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                         </div>
                         <div class="service-content rounded-bottom bg-light p-4">
                             <div class="service-content-inner">
-                                <h5 class="mb-4">Message Therapy</h5>
+                                <h5 class="mb-4">Massoterapia</h5>
                                 <p class="mb-4">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
-                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Ler Mais</a>
                             </div>
                         </div>
                     </div>
@@ -142,9 +142,9 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                         </div>
                         <div class="service-content rounded-bottom bg-light p-4">
                             <div class="service-content-inner">
-                                <h5 class="mb-4">Physiotherapy</h5>
+                                <h5 class="mb-4">Fisioterapia</h5>
                                 <p class="mb-4">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
-                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Ler Mais</a>
                             </div>
                         </div>
                     </div>
@@ -156,9 +156,9 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                         </div>
                         <div class="service-content rounded-bottom bg-light p-4">
                             <div class="service-content-inner">
-                                <h5 class="mb-4">Heat & Cold Therapy</h5>
+                                <h5 class="mb-4">Termoterapia e Crioterapia</h5>
                                 <p class="mb-4">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
-                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Ler Mais</a>
                             </div>
                         </div>
                     </div>
@@ -170,9 +170,9 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                         </div>
                         <div class="service-content rounded-bottom bg-light p-4">
                             <div class="service-content-inner">
-                                <h5 class="mb-4">Chiropatic Therapy</h5>
+                                <h5 class="mb-4">Quiropraxia</h5>
                                 <p class="mb-4">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
-                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Ler Mais</a>
                             </div>
                         </div>
                     </div>
@@ -184,9 +184,9 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                         </div>
                         <div class="service-content rounded-bottom bg-light p-4">
                             <div class="service-content-inner">
-                                <h5 class="mb-4">Work Injuries</h5>
+                                <h5 class="mb-4">Lesões Laborais</h5>
                                 <p class="mb-4">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
-                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Ler Mais</a>
                             </div>
                         </div>
                     </div>
@@ -198,9 +198,9 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                         </div>
                         <div class="service-content rounded-bottom bg-light p-4">
                             <div class="service-content-inner">
-                                <h5 class="mb-4">Spot Injuries</h5>
+                                <h5 class="mb-4">Lesões Desportivas</h5>
                                 <p class="mb-4">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
-                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Ler Mais</a>
                             </div>
                         </div>
                     </div>
@@ -212,9 +212,9 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                         </div>
                         <div class="service-content rounded-bottom bg-light p-4">
                             <div class="service-content-inner">
-                                <h5 class="mb-4">Regular Therapy</h5>
+                                <h5 class="mb-4">Terapia Regular</h5>
                                 <p class="mb-4">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
-                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Ler Mais</a>
                             </div>
                         </div>
                     </div>
@@ -226,15 +226,15 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                         </div>
                         <div class="service-content rounded-bottom bg-light p-4">
                             <div class="service-content-inner">
-                                <h5 class="mb-4">Back Pain</h5>
+                                <h5 class="mb-4">Dores nas Costas</h5>
                                 <p class="mb-4">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus, dolor qui ullam</p>
-                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                                <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Ler Mais</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
-                    <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Services More</a>
+                    <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Mais Serviços</a>
                 </div>
             </div>
         </div>
@@ -252,20 +252,20 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                         <div class="about-img-inner">
                             <img src="<?= Url::to('@web/template/img/about-2.jpg') ?>" class="img-fluid rounded-circle w-100 h-100" alt="Image">
                         </div>
-                        <div class="about-experience">15 years experience</div>
+                        <div class="about-experience">15 anos de experiência</div>
                     </div>
                 </div>
                 <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
                     <div class="section-title text-start mb-5">
-                        <h4 class="sub-title pe-3 mb-0">About Us</h4>
-                        <h1 class="display-3 mb-4">We are Ready to Help Improve Your Treatment.</h1>
+                        <h4 class="sub-title pe-3 mb-0">Sobre Nós</h4>
+                        <h1 class="display-3 mb-4">Estamos Prontos Para Ajudar a Melhorar o Seu Tratamento.</h1>
                         <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
                         <div class="mb-4">
-                            <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Refresing to get such a personal touch.</p>
+                            <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Um atendimento verdadeiramente personalizado.</p>
                             <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Duis aute irure dolor in reprehenderit in voluptate.</p>
                             <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> Velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         </div>
-                        <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">Discover More</a>
+                        <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">Descobrir Mais</a>
                     </div>
                 </div>
             </div>
@@ -278,9 +278,9 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
         <div class="container py-5">
             <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="sub-style">
-                    <h4 class="sub-title px-3 mb-0">Why Choose Us</h4>
+                    <h4 class="sub-title px-3 mb-0">Porquê Escolher-nos</h4>
                 </div>
-                <h1 class="display-3 mb-4">Why Choose Us? Get Your Life Style Back</h1>
+                <h1 class="display-3 mb-4">Porquê Escolher-nos? Recupere o Seu Estilo de Vida</h1>
                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
             </div>
             <div class="row g-4 justify-content-center">
@@ -293,7 +293,7 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                                 </div>
                             </div>
                             <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-4">Licensed Therapist</h5>
+                                <h5 class="mb-4">Terapeutas Certificados</h5>
                                 <p class="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
                             </div>
                         </div>
@@ -308,7 +308,7 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                                 </div>
                             </div>
                             <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-4">Personalized Treatment</h5>
+                                <h5 class="mb-4">Tratamento Personalizado</h5>
                                 <p class="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
                             </div>
                         </div>
@@ -323,7 +323,7 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                                 </div>
                             </div>
                             <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-4">Therapy Goals</h5>
+                                <h5 class="mb-4">Objetivos Terapêuticos</h5>
                                 <p class="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
                             </div>
                         </div>
@@ -338,7 +338,7 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                                 </div>
                             </div>
                             <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-4">Practitioners Network</h5>
+                                <h5 class="mb-4">Rede de Profissionais</h5>
                                 <p class="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
                             </div>
                         </div>
@@ -353,7 +353,7 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                                 </div>
                             </div>
                             <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-4">Comfortable Center</h5>
+                                <h5 class="mb-4">Centro Confortável</h5>
                                 <p class="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
                             </div>
                         </div>
@@ -368,7 +368,7 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                                 </div>
                             </div>
                             <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-4">Experienced Stuff</h5>
+                                <h5 class="mb-4">Equipa Experiente</h5>
                                 <p class="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
                             </div>
                         </div>
@@ -383,7 +383,7 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                                 </div>
                             </div>
                             <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-4">Therapy Goals</h5>
+                                <h5 class="mb-4">Objetivos Terapêuticos</h5>
                                 <p class="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
                             </div>
                         </div>
@@ -398,14 +398,14 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                                 </div>
                             </div>
                             <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-4">Licensed Therapist</h5>
+                                <h5 class="mb-4">Terapeutas Certificados</h5>
                                 <p class="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
-                    <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">More Details</a>
+                    <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">Mais Detalhes</a>
                 </div>
             </div>
         </div>
@@ -419,22 +419,22 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2">
                     <div class="section-title text-start">
-                        <h4 class="sub-title pe-3 mb-0">Solutions To Your Pain</h4>
-                        <h1 class="display-4 mb-4">Best Quality Services With Minimal Pain Rate</h1>
+                        <h4 class="sub-title pe-3 mb-0">Soluções Para a Sua Dor</h4>
+                        <h1 class="display-4 mb-4">Serviços de Qualidade Com o Mínimo de Dor</h1>
                         <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
                         <div class="row g-4">
                             <div class="col-sm-6">
                                 <div class="d-flex flex-column h-100">
                                     <div class="mb-4">
-                                        <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Body Relaxation</h5>
+                                        <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Relaxamento Corporal</h5>
                                         <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et deserunt qui cupiditate veritatis enim ducimus.</p>
                                     </div>
                                     <div class="mb-4">
-                                        <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Body Relaxation</h5>
+                                        <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Relaxamento Corporal</h5>
                                         <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et deserunt qui cupiditate veritatis enim ducimus.</p>
                                     </div>
                                     <div class="text-start mb-4">
-                                        <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">More Details</a>
+                                        <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">Mais Detalhes</a>
                                     </div>
                                 </div>
                             </div>
@@ -451,25 +451,25 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
                     <div class="appointment-form rounded p-5">
-                        <p class="fs-4 text-uppercase text-primary">Get In Touch</p>
-                        <h1 class="display-5 mb-4">Get Appointment</h1>
+                        <p class="fs-4 text-uppercase text-primary">Entre em Contacto</p>
+                        <h1 class="display-5 mb-4">Marcar Consulta</h1>
                         <form>
                             <div class="row gy-3 gx-4">
                                 <div class="col-xl-6">
-                                    <input type="text" class="form-control py-3 border-primary bg-transparent text-white" placeholder="First Name">
+                                    <input type="text" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Nome">
                                 </div>
                                 <div class="col-xl-6">
                                     <input type="email" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Email">
                                 </div>
                                 <div class="col-xl-6">
-                                    <input type="phone" class="form-control py-3 border-primary bg-transparent" placeholder="Phone">
+                                    <input type="phone" class="form-control py-3 border-primary bg-transparent" placeholder="Telefone">
                                 </div>
                                 <div class="col-xl-6">
                                     <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
-                                        <option selected>Your Gender</option>
-                                        <option value="1">Male</option>
-                                        <option value="2">FeMale</option>
-                                        <option value="3">Others</option>
+                                        <option selected>Género</option>
+                                        <option value="1">Masculino</option>
+                                        <option value="2">Feminino</option>
+                                        <option value="3">Outro</option>
                                     </select>
                                 </div>
                                 <div class="col-xl-6">
@@ -477,17 +477,17 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                                 </div>
                                 <div class="col-xl-6">
                                     <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
-                                        <option selected>Department</option>
-                                        <option value="1">Physiotherapy</option>
-                                        <option value="2">Physical Helth</option>
-                                        <option value="2">Treatments</option>
+                                        <option selected>Departamento</option>
+                                        <option value="1">Fisioterapia</option>
+                                        <option value="2">Saúde Física</option>
+                                        <option value="2">Tratamentos</option>
                                     </select>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-primary bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
+                                    <textarea class="form-control border-primary bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Escreva os seus comentários"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button type="button" class="btn btn-primary text-white w-100 py-3 px-5">SUBMIT NOW</button>
+                                    <button type="button" class="btn btn-primary text-white w-100 py-3 px-5">ENVIAR AGORA</button>
                                 </div>
                             </div>
                         </form>
@@ -501,8 +501,8 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
         <div class="modal-dialog">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="exampleModalLabel">Vídeo do YouTube</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 </div>
                 <div class="modal-body">
                     <!-- 16:9 aspect ratio -->
@@ -522,9 +522,9 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
         <div class="container py-5">
             <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="sub-style">
-                    <h4 class="sub-title px-3 mb-0">Meet our team</h4>
+                    <h4 class="sub-title px-3 mb-0">Conheça a nossa equipa</h4>
                 </div>
-                <h1 class="display-3 mb-4">Physiotherapy Services from Professional Therapist</h1>
+                <h1 class="display-3 mb-4">Serviços de Fisioterapia por Terapeutas Profissionais</h1>
                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
             </div>
             <div class="row g-4 justify-content-center">
@@ -540,8 +540,8 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                             </div>
                         </div>
                         <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
-                            <h5>Full Name</h5>
-                            <p class="mb-0">Message Physio Therapist</p>
+                            <h5>Nome Completo</h5>
+                            <p class="mb-0">Fisioterapeuta e Massoterapeuta</p>
                         </div>
                     </div>
                 </div>
@@ -557,8 +557,8 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                             </div>
                         </div>
                         <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
-                            <h5>Full Name</h5>
-                            <p class="mb-0">Rehabilitation Therapist</p>
+                            <h5>Nome Completo</h5>
+                            <p class="mb-0">Terapeuta de Reabilitação</p>
                         </div>
                     </div>
                 </div>
@@ -574,8 +574,8 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                             </div>
                         </div>
                         <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
-                            <h5>Full Name</h5>
-                            <p class="mb-0">Doctor of Physical therapy</p>
+                            <h5>Nome Completo</h5>
+                            <p class="mb-0">Doutor em Fisioterapia</p>
                         </div>
                     </div>
                 </div>
@@ -591,8 +591,8 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                             </div>
                         </div>
                         <div class="team-content text-center border border-primary border-top-0 rounded-bottom p-4">
-                            <h5>Full Name</h5>
-                            <p class="mb-0">Doctor of Physical therapy</p>
+                            <h5>Nome Completo</h5>
+                            <p class="mb-0">Doutor em Fisioterapia</p>
                         </div>
                     </div>
                 </div>
@@ -607,9 +607,9 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
         <div class="container py-5">
             <div class="section-title mb-5">
                 <div class="sub-style">
-                    <h4 class="sub-title text-white px-3 mb-0">Testimonial</h4>
+                    <h4 class="sub-title text-white px-3 mb-0">Testemunhos</h4>
                 </div>
-                <h1 class="display-3 mb-4">What Clients are Say</h1>
+                <h1 class="display-3 mb-4">O Que Dizem os Nossos Clientes</h1>
             </div>
             <div class="testimonial-carousel owl-carousel">
                 <div class="testimonial-item">
@@ -621,7 +621,7 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                         </p>
                         <div class="text-center">
                             <h5 class="mb-2">John Abraham</h5>
-                            <p class="mb-2 text-white-50">New York, USA</p>
+                            <p class="mb-2 text-white-50">Lisboa, Portugal</p>
                             <div class="d-flex justify-content-center">
                                 <i class="fas fa-star text-secondary"></i>
                                 <i class="fas fa-star text-secondary"></i>
@@ -641,7 +641,7 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                         </p>
                         <div class="text-center">
                             <h5 class="mb-2">John Abraham</h5>
-                            <p class="mb-2 text-white-50">New York, USA</p>
+                            <p class="mb-2 text-white-50">Lisboa, Portugal</p>
                             <div class="d-flex justify-content-center">
                                 <i class="fas fa-star text-secondary"></i>
                                 <i class="fas fa-star text-secondary"></i>
@@ -661,7 +661,7 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                         </p>
                         <div class="text-center">
                             <h5 class="mb-2">John Abraham</h5>
-                            <p class="mb-2 text-white-50">New York, USA</p>
+                            <p class="mb-2 text-white-50">Lisboa, Portugal</p>
                             <div class="d-flex justify-content-center">
                                 <i class="fas fa-star text-secondary"></i>
                                 <i class="fas fa-star text-secondary"></i>
@@ -683,9 +683,9 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
         <div class="container py-5">
             <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="sub-style">
-                    <h4 class="sub-title px-3 mb-0">Our Blog</h4>
+                    <h4 class="sub-title px-3 mb-0">O Nosso Blog</h4>
                 </div>
-                <h1 class="display-3 mb-4">Excellent Facility and High Quality Therapy</h1>
+                <h1 class="display-3 mb-4">Instalações Excelentes e Terapia de Alta Qualidade</h1>
                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
             </div>
             <div class="row g-4 justify-content-center">
@@ -697,11 +697,11 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                         <div class="blog-centent p-4">
                             <div class="d-flex justify-content-between mb-4">
                                 <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045</p>
-                                <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
+                                <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comentários</a>
                             </div>
-                            <a href="#" class="h4">Remove back Pain While Working on o physio</a>
+                            <a href="#" class="h4">Elimine as dores nas costas com fisioterapia</a>
                             <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic consequatur beatae architecto,</p>
-                            <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
+                            <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Ler Mais</a>
                         </div>
                     </div>
                 </div>
@@ -713,11 +713,11 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                         <div class="blog-centent p-4">
                             <div class="d-flex justify-content-between mb-4">
                                 <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045</p>
-                                <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
+                                <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comentários</a>
                             </div>
-                            <a href="#" class="h4">Benefits of a weekly physiotherapy session</a>
+                            <a href="#" class="h4">Benefícios de uma sessão semanal de fisioterapia</a>
                             <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic consequatur beatae architecto,</p>
-                            <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
+                            <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Ler Mais</a>
                         </div>
                     </div>
                 </div>
@@ -729,11 +729,11 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                         <div class="blog-centent p-4">
                             <div class="d-flex justify-content-between mb-4">
                                 <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045</p>
-                                <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
+                                <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comentários</a>
                             </div>
-                            <a href="#" class="h4">Regular excercise can slow ageing process</a>
+                            <a href="#" class="h4">O exercício regular pode abrandar o envelhecimento</a>
                             <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic consequatur beatae architecto,</p>
-                            <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
+                            <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Ler Mais</a>
                         </div>
                     </div>
                 </div>
@@ -763,30 +763,30 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="footer-item d-flex flex-column">
-                        <h4 class="mb-4 text-white">Quick Links</h4>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> About Us</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Our Blog & News</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Our Team</a>
+                        <h4 class="mb-4 text-white">Links Rápidos</h4>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Sobre Nós</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Contacte-nos</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Política de Privacidade</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Termos e Condições</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Blog e Notícias</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> A Nossa Equipa</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="footer-item d-flex flex-column">
-                        <h4 class="mb-4 text-white">Terapia Services</h4>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> All Services</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Physiotherapy</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Diagnostics</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Manual Therapy</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Massage Therapy</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Rehabilitation</a>
+                        <h4 class="mb-4 text-white">Serviços Terapia</h4>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Todos os Serviços</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Fisioterapia</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Diagnóstico</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Terapia Manual</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Massagem Terapêutica</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Reabilitação</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="footer-item d-flex flex-column">
-                        <h4 class="mb-4 text-white">Contact Info</h4>
-                        <a href=""><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
+                        <h4 class="mb-4 text-white">Contactos</h4>
+                        <a href=""><i class="fa fa-map-marker-alt me-2"></i> Rua Exemplo 123, Lisboa, Portugal</a>
                         <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
                         <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
                         <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
@@ -803,13 +803,13 @@ $this->params['meta_keywords'] = 'yii, yii2, php, framework, web application, hi
         <div class="container">
             <div class="row g-4 align-items-center">
                 <div class="col-md-6 text-center text-md-start mb-md-0">
-                    <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                    <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Terapia</a>, Todos os direitos reservados.</span>
                 </div>
                 <div class="col-md-6 text-center text-md-end text-white">
                     <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                     <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                     <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                    Design por <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
                 </div>
             </div>
         </div>

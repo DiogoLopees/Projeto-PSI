@@ -23,7 +23,7 @@ class ResendVerificationEmailForm extends Model
             ['email', 'exist',
                 'targetClass' => User::class,
                 'filter' => ['status' => User::STATUS_INACTIVE],
-                'message' => 'There is no user with this email address.',
+                'message' => 'Não existe nenhum utilizador com este email.',
             ],
         ];
     }
@@ -55,7 +55,7 @@ class ResendVerificationEmailForm extends Model
             )
             ->setFrom([$supportEmail => $appName . ' robot'])
             ->setTo($this->email)
-            ->setSubject('Account registration at ' . $appName)
+            ->setSubject('Registo de conta em ' . $appName)
             ->send();
     }
 }

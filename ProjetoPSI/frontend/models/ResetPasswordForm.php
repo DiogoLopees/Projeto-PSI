@@ -26,11 +26,11 @@ class ResetPasswordForm extends Model
     public function __construct(string $token, array $config = [])
     {
         if ($token === '') {
-            throw new InvalidArgumentException('Password reset token cannot be blank.');
+            throw new InvalidArgumentException('O token de redefinição de password não pode estar vazio.');
         }
         $this->_user = User::findByPasswordResetToken($token);
         if (!$this->_user) {
-            throw new InvalidArgumentException('Wrong password reset token.');
+            throw new InvalidArgumentException('Token de redefinição de password inválido.');
         }
         parent::__construct($config);
     }

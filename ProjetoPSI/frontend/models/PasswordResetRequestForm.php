@@ -26,7 +26,7 @@ class PasswordResetRequestForm extends Model
             ['email', 'exist',
                 'targetClass' => User::class,
                 'filter' => ['status' => User::STATUS_ACTIVE],
-                'message' => 'There is no user with this email address.',
+                'message' => 'Não existe nenhum utilizador com este email.',
             ],
         ];
     }
@@ -65,7 +65,7 @@ class PasswordResetRequestForm extends Model
             )
             ->setFrom([$supportEmail => $appName . ' robot'])
             ->setTo($this->email)
-            ->setSubject('Password reset for ' . $appName)
+            ->setSubject('Redefinição de password - ' . $appName)
             ->send();
     }
 }

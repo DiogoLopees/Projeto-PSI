@@ -3,6 +3,8 @@
 declare(strict_types=1);
 
 return [
+    'language' => 'pt-PT',
+    'sourceLanguage' => 'en-US',
     'bootstrap' => [
         \common\bootstrap\MailerBootstrap::class,
     ],

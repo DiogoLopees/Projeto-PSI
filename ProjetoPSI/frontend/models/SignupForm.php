@@ -25,17 +25,27 @@ class SignupForm extends Model
         return [
             ['username', 'trim'],
             ['username', 'required'],
-            ['username', 'unique', 'targetClass' => User::class, 'message' => 'This username has already been taken.'],
+            ['username', 'unique', 'targetClass' => User::class, 'message' => 'Este nome de utilizador já está a ser utilizado.'],
             ['username', 'string', 'min' => 2, 'max' => 255],
 
             ['email', 'trim'],
             ['email', 'required'],
             ['email', 'email'],
             ['email', 'string', 'max' => 255],
-            ['email', 'unique', 'targetClass' => User::class, 'message' => 'This email address has already been taken.'],
+            ['email', 'unique', 'targetClass' => User::class, 'message' => 'Este email já está a ser utilizado.'],
 
             ['password', 'required'],
             ['password', 'string', 'min' => Yii::$app->params['user.passwordMinLength']],
+        ];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function attributeLabels(): array
+    {
+        return [
+            'username' => 'Nome de Utilizador',
         ];
     }
 
@@ -85,7 +95,7 @@ class SignupForm extends Model
             )
             ->setFrom([$supportEmail => $appName . ' robot'])
             ->setTo($this->email)
-            ->setSubject('Account registration at ' . $appName)
+            ->setSubject('Registo de conta em ' . $appName)
             ->send();
     }
 }

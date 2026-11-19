@@ -10,19 +10,19 @@ use yii\helpers\Html;
 
 $items = [
     [
-        'label' => 'Home',
+        'label' => 'Início',
         'url' => ['/site/index'],
     ],
     [
-        'label' => 'About',
+        'label' => 'Sobre',
         'url' => ['/site/about'],
     ],
     [
-        'label' => 'Contact',
+        'label' => 'Contactos',
         'url' => ['/site/contact'],
     ],
     [
-        'label' => 'Signup',
+        'label' => 'Registar',
         'url' => ['/site/signup'],
         'visible' => Yii::$app->user->isGuest,
     ],
@@ -63,7 +63,7 @@ $items = [
         [
             'id' => 'theme-toggle',
             'class' => 'btn btn-link nav-link fs-5',
-            'aria-label' => 'Switch to dark mode',
+            'aria-label' => 'Mudar para modo escuro',
         ],
     ) ?>
     <?php NavBar::end() ?>

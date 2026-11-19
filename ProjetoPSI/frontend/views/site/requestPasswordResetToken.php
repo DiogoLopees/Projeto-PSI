@@ -9,9 +9,9 @@ declare(strict_types=1);
 use yii\bootstrap5\ActiveForm;
 use yii\bootstrap5\Html;
 
-$this->title = 'Reset your password';
+$this->title = 'Redefinir a sua password';
 $this->params['breadcrumbs'][] = $this->title;
-$this->params['meta_description'] = 'Request a password reset link to recover access to your account.';
+$this->params['meta_description'] = 'Peça um link de redefinição de password para recuperar o acesso à sua conta.';
 $this->params['meta_keywords'] = 'yii, yii2, password reset, forgot password, recovery';
 $htmlIcon = <<<HTML
 {label}<div class="input-group"><span class="input-group-text" aria-hidden="true">%s</span>{input}</div>{error}{hint}
@@ -37,10 +37,10 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                     </div>
                     <div>
                         <h2 class="fw-bold mb-3 login-brand-title">
-                            Forgot Your<br>Password?
+                            Esqueceu-se da<br>Password?
                         </h2>
                         <p class="opacity-75 mb-0 login-brand-text">
-                            No worries. Enter your email and we will send you a reset link.
+                            Não se preocupe. Introduza o seu email e enviaremos um link de redefinição.
                         </p>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                             ) ?>
                         </div>
                         <h1 class="h3 fw-bold mb-1"><?= Html::encode($this->title) ?></h1>
-                        <p class="text-body-secondary small">A link to reset your password will be sent to your email</p>
+                        <p class="text-body-secondary small">Será enviado para o seu email um link para redefinir a password</p>
                     </div>
 
                     <?php $form = ActiveForm::begin(['id' => 'request-password-reset-form']); ?>
@@ -75,12 +75,12 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                                 'class' => 'form-control',
                                 'placeholder' => 'email@example.com',
                             ],
-                        ])->textInput()->label('Your Email', $labelOptions) ?>
+                        ])->textInput()->label('O Seu Email', $labelOptions) ?>
                     </div>
 
                     <div class="d-grid">
                         <?= Html::submitButton(
-                            'Send',
+                            'Enviar',
                             [
                                 'class' => 'btn login-btn btn-lg rounded-3 text-white',
                             ],
@@ -90,7 +90,7 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                     <?php ActiveForm::end(); ?>
 
                     <div class="text-body-secondary text-center mt-3 small">
-                        Remember your password? <?= Html::a('Login', ['site/login']) ?>
+                        Lembrou-se da password? <?= Html::a('Login', ['site/login']) ?>
                     </div>
 
                 </div>

@@ -21,7 +21,7 @@
         <!-- href be escaped -->
         <!-- <div class="form-inline">
             <div class="input-group" data-widget="sidebar-search">
-                <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control form-control-sidebar" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
                 <div class="input-group-append">
                     <button class="btn btn-sidebar">
                         <i class="fas fa-search fa-fw"></i>
@@ -37,42 +37,42 @@
                 'items' => [
                        ['label' => 'Utilizadores', 'url' => ['user/index'], 'icon' => 'home'],
                     [
-                        'label' => 'Starter Pages',
+                        'label' => 'Páginas Iniciais',
                         'icon' => 'tachometer-alt',
                         'badge' => '<span class="right badge badge-info">2</span>',
                         'items' => [
-                            ['label' => 'Active Page', 'url' => ['site/index'], 'iconStyle' => 'far'],
-                            ['label' => 'Inactive Page', 'iconStyle' => 'far'],
+                            ['label' => 'Página Ativa', 'url' => ['site/index'], 'iconStyle' => 'far'],
+                            ['label' => 'Página Inativa', 'iconStyle' => 'far'],
                         ]
                     ],
-                    ['label' => 'Simple Link', 'icon' => 'th', 'badge' => '<span class="right badge badge-danger">New</span>'],
-                    ['label' => 'Yii2 PROVIDED', 'header' => true],
+                    ['label' => 'Link Simples', 'icon' => 'th', 'badge' => '<span class="right badge badge-danger">Novo</span>'],
+                    ['label' => 'FORNECIDO PELO YII2', 'header' => true],
                     ['label' => 'Login', 'url' => ['site/login'], 'icon' => 'sign-in-alt', 'visible' => Yii::$app->user->isGuest],
                     ['label' => 'Gii',  'icon' => 'file-code', 'url' => ['/gii'], 'target' => '_blank'],
                     ['label' => 'Debug', 'icon' => 'bug', 'url' => ['/debug'], 'target' => '_blank'],
-                    ['label' => 'MULTI LEVEL EXAMPLE', 'header' => true],
-                    ['label' => 'Level1'],
+                    ['label' => 'EXEMPLO MULTINÍVEL', 'header' => true],
+                    ['label' => 'Nível 1'],
                     [
-                        'label' => 'Level1',
+                        'label' => 'Nível 1',
                         'items' => [
-                            ['label' => 'Level2', 'iconStyle' => 'far'],
+                            ['label' => 'Nível 2', 'iconStyle' => 'far'],
                             [
-                                'label' => 'Level2',
+                                'label' => 'Nível 2',
                                 'iconStyle' => 'far',
                                 'items' => [
-                                    ['label' => 'Level3', 'iconStyle' => 'far', 'icon' => 'dot-circle'],
-                                    ['label' => 'Level3', 'iconStyle' => 'far', 'icon' => 'dot-circle'],
-                                    ['label' => 'Level3', 'iconStyle' => 'far', 'icon' => 'dot-circle']
+                                    ['label' => 'Nível 3', 'iconStyle' => 'far', 'icon' => 'dot-circle'],
+                                    ['label' => 'Nível 3', 'iconStyle' => 'far', 'icon' => 'dot-circle'],
+                                    ['label' => 'Nível 3', 'iconStyle' => 'far', 'icon' => 'dot-circle']
                                 ]
                             ],
-                            ['label' => 'Level2', 'iconStyle' => 'far']
+                            ['label' => 'Nível 2', 'iconStyle' => 'far']
                         ]
                     ],
-                    ['label' => 'Level1'],
-                    ['label' => 'LABELS', 'header' => true],
-                    ['label' => 'Important', 'iconStyle' => 'far', 'iconClassAdded' => 'text-danger'],
-                    ['label' => 'Warning', 'iconClass' => 'nav-icon far fa-circle text-warning'],
-                    ['label' => 'Informational', 'iconStyle' => 'far', 'iconClassAdded' => 'text-info'],
+                    ['label' => 'Nível 1'],
+                    ['label' => 'ETIQUETAS', 'header' => true],
+                    ['label' => 'Importante', 'iconStyle' => 'far', 'iconClassAdded' => 'text-danger'],
+                    ['label' => 'Aviso', 'iconClass' => 'nav-icon far fa-circle text-warning'],
+                    ['label' => 'Informativo', 'iconStyle' => 'far', 'iconClassAdded' => 'text-info'],
                 ],
             ]);
             ?>

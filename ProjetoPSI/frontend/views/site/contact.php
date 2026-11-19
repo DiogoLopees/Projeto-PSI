@@ -10,9 +10,9 @@ use yii\bootstrap5\ActiveForm;
 use yii\bootstrap5\Html;
 use yii\captcha\Captcha;
 
-$this->title = 'Contact us';
+$this->title = 'Contacte-nos';
 $this->params['breadcrumbs'][] = $this->title;
-$this->params['meta_description'] = 'Get in touch with us. Send us a message using the contact form.';
+$this->params['meta_description'] = 'Entre em contacto connosco. Envie-nos uma mensagem através do formulário de contacto.';
 $this->params['meta_keywords'] = 'yii, yii2, contact, support, feedback';
 $htmlIcon = <<<HTML
 {label}<div class="input-group"><span class="input-group-text" aria-hidden="true">%s</span>{input}</div>{error}{hint}
@@ -38,10 +38,10 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                     </div>
                     <div>
                         <h2 class="fw-bold mb-3 login-brand-title">
-                            Get In<br>Touch
+                            Entre em<br>Contacto
                         </h2>
                         <p class="opacity-75 mb-0 login-brand-text">
-                            Have a question or business inquiry? We would love to hear from you.
+                            Tem alguma dúvida ou proposta? Gostaríamos muito de ouvir de si.
                         </p>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                             ) ?>
                         </div>
                         <h1 class="h3 fw-bold mb-1"><?= Html::encode($this->title) ?></h1>
-                        <p class="text-body-secondary small">Fill out the form below and we will get back to you</p>
+                        <p class="text-body-secondary small">Preencha o formulário abaixo e entraremos em contacto consigo</p>
                     </div>
 
                     <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
@@ -74,10 +74,10 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                                 'template' => sprintf($htmlIcon, '&#128100;'),
                                 'inputOptions' => [
                                     'class' => 'form-control',
-                                    'placeholder' => 'Name',
+                                    'placeholder' => 'Nome',
                                     'autofocus' => true,
                                 ],
-                            ])->label('Your Name', $labelOptions) ?>
+                            ])->label('O Seu Nome', $labelOptions) ?>
                         </div>
 
                         <div class="col-sm-6 mb-3">
@@ -88,7 +88,7 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                                     'class' => 'form-control',
                                     'placeholder' => 'email@example.com',
                                 ],
-                            ])->label('Your Email', $labelOptions) ?>
+                            ])->label('O Seu Email', $labelOptions) ?>
                         </div>
                     </div>
 
@@ -98,9 +98,9 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                             'template' => sprintf($htmlIcon, '&#128172;'),
                             'inputOptions' => [
                                 'class' => 'form-control',
-                                'placeholder' => 'Subject',
+                                'placeholder' => 'Assunto',
                             ],
-                        ])->label('Subject', $labelOptions) ?>
+                        ])->label('Assunto', $labelOptions) ?>
                     </div>
 
                     <div class="mb-3">
@@ -109,22 +109,22 @@ $labelOptions = ['class' => 'form-label fw-semibold small'];
                             'template' => '{label}{input}{error}{hint}',
                             'inputOptions' => [
                                 'class' => 'form-control',
-                                'placeholder' => 'Your message...',
+                                'placeholder' => 'A sua mensagem...',
                             ],
-                        ])->textarea()->label('Message', $labelOptions) ?>
+                        ])->textarea()->label('Mensagem', $labelOptions) ?>
                     </div>
 
                     <div class="d-flex align-items-center gap-3 flex-wrap">
                         <?= $form->field($model, 'verifyCode', [
                             'enableLabel' => false,
                             'options' => ['class' => ''],
-                            'inputOptions' => ['aria-label' => 'Verification code'],
+                            'inputOptions' => ['aria-label' => 'Código de verificação'],
                         ])->widget(Captcha::class, [
                             'template' => '<div class="d-flex align-items-center gap-2">{image}{input}</div>',
                         ]) ?>
 
                         <?= Html::submitButton(
-                            'Submit',
+                            'Enviar',
                             [
                                 'class' => 'btn login-btn text-white px-4 ms-auto',
                                 'name' => 'contact-button',
