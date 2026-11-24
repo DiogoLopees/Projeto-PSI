@@ -8,6 +8,7 @@ use common\models\User;
 use Yii;
 use yii\base\Model;
 use yii\mail\MailerInterface;
+use common\models\PerfilUtilizador;
 
 /**
  * Signup form
@@ -64,16 +65,36 @@ class SignupForm extends Model
             return null;
         }
 
-        $user = new User();
+        $transaction = Yii::$app->db->beginTransaction();
+        try {
+            $user = new User();
+            $user->username = $this->username;
+            $user->email = $this->email;
+            $user->setPassword($this->password);
+            $user->generateAuthKey();
+            $user->generateEmailVerificationToken();
 
-        $user->username = $this->username;
-        $user->email = $this->email;
+            if (!$user->save()) {
+                $transaction->rollBack();
+                return null;
+            }
 
-        $user->setPassword($this->password);
-        $user->generateAuthKey();
-        $user->generateEmailVerificationToken();
+            $perfil = new PerfilUtilizador();
+            $perfil->id_user = $user->id;
+            $perfil->nome = $this->username;
+            $perfil->cargo = PerfilUtilizador::CARGO_CLIENTE;
 
-        return $user->save() && $this->sendEmail($mailer, $user, $supportEmail, $appName);
+            if (!$perfil->save()) {
+                $transaction->rollBack();
+                return null;
+            }
+
+            $transaction->commit();
+            return $this->sendEmail($mailer, $user, $supportEmail, $appName);
+        } catch (\Throwable $e) {
+            $transaction->rollBack();
+            throw $e;
+        }
     }
 
     /**

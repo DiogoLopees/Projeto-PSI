@@ -18,13 +18,10 @@ class m261029_194450_add_perfil_utilizador extends Migration
             'id' => $this->primaryKey(),
             'id_user' => $this->integer()->notNull(), // Coluna preparada para a chave estrangeira
             'nome' => $this->string(150)->notNull(),
-            'tipo' => $this->string(50)->notNull(),
+            'cargo' => $this->string(50)->notNull()->defaultValue('cliente'),
         ], $tableOptions);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function safeDown()
     {
         $this->dropTable('{{%perfil_utilizador}}');
