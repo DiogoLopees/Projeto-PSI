@@ -73,6 +73,16 @@ $this->params['meta_keywords'] = 'fisioterapia, terapia, reabilitação, massage
                     </div>
                     <a href="#" class="nav-item nav-link">Contacte-nos</a>
                 </div>
+                <?php if (Yii::$app->user->isGuest): ?>
+                    <a href="<?= Url::to(['/site/signup']) ?>" class="nav-item nav-link">Registar</a>
+                    <a href="<?= Url::to(['/site/login']) ?>" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2">Login</a>
+                <?php else: ?>
+                    <?= \yii\helpers\Html::beginForm(['/site/logout'], 'post', ['class' => 'd-inline']) ?>
+                    <button type="submit" class="btn btn-danger rounded-pill text-white py-2 px-4 ms-2">
+                        Logout (<?= \yii\helpers\Html::encode(Yii::$app->user->identity->username) ?>)
+                    </button>
+                    <?= \yii\helpers\Html::endForm() ?>
+                <?php endif; ?>
                 <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Marcar Consulta</a>
             </div>
         </nav>
