@@ -16,6 +16,8 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        binding.btnGoToRegister.setOnClickListener(v ->
+                startActivity(new Intent(this, RegisterActivity.class)));
         super.onCreate(savedInstanceState);
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
